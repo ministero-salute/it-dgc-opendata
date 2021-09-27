@@ -1,4 +1,4 @@
-# DHC issued daily trend data format
+# DGC issued daily trend data format
 
 ## Data update
 - Every day at 2 am (UTC). 
