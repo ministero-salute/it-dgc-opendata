@@ -54,7 +54,7 @@ it-dgc-opendata/
 - [DGC acquired trend data](https://github.com/ministero-salute/it-dgc-opendata/blob/master/format-dgc-acquired-trend.md)
 
 # Data update
-Daily trend data: every day at 2 pm (UTC).
+Daily trend data: every day at 2 am (UTC).
 
 # Licence
 
