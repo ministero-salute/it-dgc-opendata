@@ -1,4 +1,4 @@
-<h1 align="center">Digital Green Certificate Template</h1>
+<h1 align="center">Digital Green Certificate - Open Data</h1>
 
 <div align="center">
 <img width="256" height="256" src="img/logo-dcg.png">
@@ -10,18 +10,21 @@
     <a href="CODE_OF_CONDUCT.md">
       <img src="https://img.shields.io/badge/Contributor%20Covenant-v2.0%20adopted-ff69b4.svg" />
     </a>
-    <a href="CODE_OF_CONDUCT.md">
-      <img src="https://img.shields.io/badge/badge-green.svg" />
+    <!-- last commit -->
+    <a href="https://github.com/ministero-salute/it-dgc-opendata/commits/master">
+      <img src="https://img.shields.io/github/last-commit/ministero-salute/it-dgc-opendata" />
     </a>
-    <a href="/">
-      <img alt="java11"
-      src="https://img.shields.io/badge/badge-red.svg">
-    </a>
-    <a href="/">
-      <img alt="security: bandit"
-      src="https://img.shields.io/badge/badge-yellow.svg">
-    </a>
+
 </div>
+
+# Description
+
+This repository contains the data collected by the Italian "Digital Green Certificate" system.
+
+In particular, the following data are uploaded every day at 2 am (UTC):
+- daily trend of issued and acquired DGC divided by categories.
+
+Furthermore, it is possible to check the interactive visualization of this dataset on the dedicated [DGC dashboard](https://www.dgc.gov.it/web/).
 
 
 # Table of contents
@@ -40,21 +43,35 @@
 
 **Please take the time to read and consider the other repositories in full before digging into the source code or opening an Issue. They contain a lot of details that are fundamental to understanding the source code and this repository's documentation.**
 
-# Installation
+# Contents
 
-### Prerequisites
+- [Repository structure](#repository-structure)
+- [Data format](#data-format)
+- [Data update](#data-update)
+- [License](#license)
 
-# Contributing
-Contributions are most welcome. Before proceeding, please read the [Code of Conduct](./CODE_OF_CONDUCT.md) for guidance on how to approach the community and create a positive environment. Additionally, please read our [CONTRIBUTING](./CONTRIBUTING.md) file, which contains guidance on ensuring a smooth contribution process.
 
-## Contributors
-Here is a list of contributors. Thank you to everyone involved for improving this project, day by day.
+# Repository structure
+```
+it-dgc-opendata/
+│
+├── data/
+│   ├── dgc-issued.csv
+│   ├── dgc-issued.json
+│   ├── dgc-issued-latest.csv
+│   ├── dgc-issued-latest.json
+│   ├── dgc-acquired.csv
+│   ├── dgc-acquired.json
+│   ├── dgc-acquired-latest.csv
+│   ├── dgc-acquired-latest.json
+```
 
-<a href="https://github.com/REPO(Ex. ministero-salute/it-eucert-gateway-client)">
-  <img
-  src="https://contributors-img.web.app/image?repo=REPO(Ex. ministero-salute/it-eucert-gateway-client)"
-  />
-</a>
+# Data format
+- [DGC issued trend data](https://github.com/ministero-salute/it-dgc-opendata/blob/master/format-dgc-issued-trend.md)
+- [DGC acquired trend data](https://github.com/ministero-salute/it-dgc-opendata/blob/master/format-dgc-acquired-trend.md)
+
+# Data update
+Daily trend data: every day at 2 pm (UTC).
 
 # Licence
 
