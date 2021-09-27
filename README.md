@@ -26,23 +26,6 @@ In particular, the following data are uploaded every day at 2 am (UTC):
 
 Furthermore, it is possible to check the interactive visualization of this dataset on the dedicated [DGC dashboard](https://www.dgc.gov.it/web/).
 
-
-# Table of contents
-
-- [Context](#context)
-- [Installation](#installation)
-- [Contributing](#contributing)
-  - [Contributors](#contributors)
-- [Licence](#licence)
-  - [Authors / Copyright](#authors--copyright)
-  - [Third-party component licences](#third-party-component-licences)
-  - [Licence details](#licence-details)
-
-
-# Context
-
-**Please take the time to read and consider the other repositories in full before digging into the source code or opening an Issue. They contain a lot of details that are fundamental to understanding the source code and this repository's documentation.**
-
 # Contents
 
 - [Repository structure](#repository-structure)
