@@ -1,2 +1,2 @@
-data,issued_for_vaccines,issued_for_tests,issued_for_healing,issued_total
-2021-09-26,168150,107972,2198,278320
+data,issued_for_vaccines,issued_for_vaccines_total,issued_for_tests,issued_for_tests_total,issued_for_healing,issued_for_healing_total,issued_all,issued_all_total
+2021-09-26,168150,168150,107972,107972,2198,2198,278320,278320
