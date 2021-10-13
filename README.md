@@ -1,4 +1,4 @@
-<h1 align="center">Digital Green Certificate - Open Data</h1>
+<h1 align="center">EU Digital Covid Certificate - Open Data</h1>
 
 <div align="center">
 <img width="256" height="256" src="img/logo-dcg.png">
@@ -19,12 +19,12 @@
 
 # Description
 
-This repository contains the data collected by the Italian "Digital Green Certificate" system.
+This repository contains the data collected by the Italian "EU Digital Covid Certificate" system.
 
 In particular, the following data are uploaded every day at 2 am (UTC):
-- daily trend of issued and acquired DGC divided by categories.
+- daily trend of issued and acquired EU DCC divided by categories.
 
-Furthermore, it is possible to check the interactive visualization of this dataset on the dedicated [DGC dashboard](https://www.dgc.gov.it/web/).
+Furthermore, it is possible to check the interactive visualization of this dataset on the dedicated [DGC dashboard](https://www.dgc.gov.it/spa/dashboard).
 
 # Contents
 
