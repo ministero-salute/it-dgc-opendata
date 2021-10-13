@@ -68,4 +68,4 @@ Please check the [AUTHORS](AUTHORS) file for extended reference.
 
 ## Licence details
 
-The licence for this repository is a [GNU Affero General Public Licence version 3](https://www.gnu.org/licenses/agpl-3.0.html) (SPDX: AGPL-3.0). Please see the [LICENSE](LICENSE) file for full reference.
+The licence for this repository is a Creative Commons Attribution 4.0 International. Please see the [LICENSE](LICENSE) file for full reference.
