@@ -1,0 +1,52 @@
+encoding: utf-8
+format: csv
+hashing: md5
+name: dgc-issued-latest
+path: dgc-issued-latest.csv
+profile: tabular-data-resource
+schema:
+  fields:
+    - name: data
+      type: date
+    - name: issued_for_vaccines
+      type: integer
+      title: number of daily DGC issued by vaccination
+      constraint:
+        minimum: 0
+    - name: issued_for_vaccines_total
+      type: integer
+      title: number of total DGC issued by vaccination
+      constraint:
+        minimum: 0
+    - name: issued_for_tests
+      type: integer
+      title: number of daily DGC issued per covid-19 test
+      constraint:
+        minimum: 0
+    - name: issued_for_tests_total
+      type: integer
+      title: number of total DGC issued per covid-19 test
+      constraint:
+        minimum: 0
+    - name: issued_for_healing
+      type: integer
+      title: number of daily DGC issued by covid-19 healing
+      constraint:
+        minimum: 0
+    - name: issued_for_healing_total
+      type: integer
+      title: number of total DGC issued by covid-19 healing
+      constraint:
+        minimum: 0
+    - name: issued_all
+      type: integer
+      title: total number of daily DGC issued
+      constraint:
+        minimum: 0
+    - name: issued_all_total
+      type: integer
+      title: total number of DGC issued
+      constraint:
+        minimum: 0
+primarykey: data
+scheme: file
