@@ -1,0 +1,190 @@
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcatapit: <http://dati.gov.it/onto/dcatapit#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+
+<http://sample.org/meta/agent/m_sa> a dcatapit:Agent , foaf:Agent ;
+	foaf:name "Ministero della Salute" ;
+	dct:identifier "m_sa" .
+
+<http://sample.org/meta/catalog/cat1> a dcatapit:Catalog , dcat:Catalog ;
+	dct:title "EU Digital Covid Certificate - Open Data"@en ;
+	dct:title "Certificato Digitale Covid Europeo - Open Data"@it ;
+	dct:description "This repository contains the data collected by the Italian \"EU Digital Covid Certificate\" system."@en ;
+	dct:description "Questo è il catalogo che contiene tutti i dati raccolti dal sistema italiano sul Certificato Covid Europeo"@it ;
+	dct:publisher <http://sample.org/meta/agent/m_sa> ;
+	dcat:dataset <http://sample.org/meta/dataset/dset1> ;
+	dcat:themeTaxonomy <http://publications.europa.eu/resource/authority/data-theme> ;
+	dct:modified "2021-10-21"^^xsd:date ;
+	foaf:homepage <https://github.com/ministero-salute/it-dgc-opendata> ;
+	dct:language <http://publications.europa.eu/resource/authority/language/ITA> ;
+	dct:issued "2021-10-21"^^xsd:date ;
+	dcat:dataset <http://sample.org/meta/dataset/dset2> .
+
+<http://sample.org/meta/dataset/dset1> a dcatapit:Dataset , dcat:Dataset ;
+	dct:identifier "dat1" ;
+	dct:title "DGC emessi"@it ;
+	dct:title "Issued DGCs"@en ;
+	dct:description "Issued DGCs by issuing method"@en ;
+	dct:description "DGC emessi divisi per metodo di emissione"@it ;
+	dct:modified "2021-10-20"^^xsd:date ;
+	dcat:theme <http://publications.europa.eu/resource/authority/data-theme/GOVE> ;
+	dct:rightsHolder <http://sample.org/meta/agent/m_sa> ;
+	dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/DAILY> ;
+	dcat:distribution <http://sample.org/meta/distribution/dstr1> ;
+	dcat:contactPoint <http://sample.org/meta/contact/M_SA> ;
+	dct:publisher <http://sample.org/meta/agent/m_sa> ;
+	dct:creator <http://sample.org/meta/agent/m_sa> ;
+	owl:versionInfo "1.0" ;
+	dct:issued "2021-10-20"^^xsd:date ;
+	dcat:landingPage <https://github.com/ministero-salute/it-dgc-opendata> ;
+	dct:language <http://publications.europa.eu/resource/authority/language/ITA> ;
+	dcat:keyword "Certificato" .
+
+
+_:node1fif0b74px2 a locn:Geometry ;
+	locn:geometry "<gml:Envelope srsName=\"http://www.opengis.net/def/EPSG/0/4326\"><gml:lowerCorner>6.7499552751  36.619987291</gml:lowerCorner><gml:upperCorner> 18.4802470232  47.1153931748</gml:upperCorner></gml:Envelope>"^^<http://www.opengis.net/ont/geosparql#gmlLiteral> .
+
+<http://sample.org/meta/dataset/dset1> dct:location _:node1fif0b74px2 ;
+	dcat:theme <http://publications.europa.eu/resource/authority/data-theme/SOCI> ;
+	dcat:distribution <http://sample.org/meta/distribution/dstr2> ;
+	dcat:distribution <http://sample.org/meta/distribution/dstr3> ;
+	dcat:distribution <http://sample.org/meta/distribution/dstr4> ;
+	dct:language <http://publications.europa.eu/resource/authority/language/ENG> ;
+	dcat:keyword "Greenpass" .
+
+<http://sample.org/meta/dataset/dset2> a dcatapit:Dataset , dcat:Dataset ;
+	dct:identifier "dat2" ;
+	dct:title "DGC acquisiti"@it ;
+	dct:title "Acquired DGCs"@it ;
+	dct:description "DGC acquisiti divisi per metodo di acquisizione"@it ;
+	dct:description "Acquired DGCs by method of acquisition"@en ;
+	dct:modified "2021-10-20"^^xsd:date ;
+	dcat:theme <http://publications.europa.eu/resource/authority/data-theme/GOVE> ;
+	dct:rightsHolder <http://sample.org/meta/agent/m_sa> ;
+	dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/DAILY> ;
+	dcat:distribution <http://sample.org/meta/distribution/dstr5> ;
+	dcat:contactPoint <http://sample.org/meta/contact/M_SA> ;
+	dct:publisher <http://sample.org/meta/agent/m_sa> ;
+	dct:creator <http://sample.org/meta/agent/m_sa> ;
+	owl:versionInfo "1.0" ;
+	dct:issued "2021-10-20"^^xsd:date ;
+	dcat:landingPage <https://github.com/ministero-salute/it-dgc-opendata> ;
+	dct:language <http://publications.europa.eu/resource/authority/language/ITA> ;
+	dcat:keyword "Certificato" .
+
+_:node1fif0b74px4 a locn:Geometry ;
+	locn:geometry "<gml:Envelope srsName=\"http://www.opengis.net/def/EPSG/0/4326\"><gml:lowerCorner>6.7499552751  36.619987291</gml:lowerCorner><gml:upperCorner> 18.4802470232  47.1153931748</gml:upperCorner></gml:Envelope>"^^<http://www.opengis.net/ont/geosparql#gmlLiteral> .
+
+<http://sample.org/meta/dataset/dset2> dct:location _:node1fif0b74px4 ;
+	dcat:theme <http://publications.europa.eu/resource/authority/data-theme/SOCI> ;
+	dcat:distribution <http://sample.org/meta/distribution/dstr6> ;
+	dcat:distribution <http://sample.org/meta/distribution/dstr7> ;
+	dcat:distribution <http://sample.org/meta/distribution/dstr8> ;
+	dct:issued "2021-10-20"^^xsd:date ;
+	dct:language <http://publications.europa.eu/resource/authority/language/ENG> ;
+	dcat:keyword "Greenpass" .
+
+<http://sample.org/meta/distribution/dstr1> a dcatapit:Distribution , dcat:Distribution ;
+	dct:format <http://publications.europa.eu/resource/authority/file-type/CSV> ;
+	dcat:accessURL <https://github.com/ministero-salute/it-dgc-opendata/blob/master/data/dgc-issued.csv> ;
+	dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+	dct:description "Daily issued DGCs"@en ;
+	dct:description "DGC emessi giornalmente"@it ;
+	dct:title "Distribuzione CSV del dataset DGC emessi giornalmente"@it ;
+	dct:title "CSV distribution of daily issued DGCs dataset"@en ;
+	dcat:downloadURL <https://raw.githubusercontent.com/ministero-salute/it-dgc-opendata/master/data/dgc-issued.csv> ;
+	dct:modified "2021-10-20"^^xsd:date .
+
+<http://sample.org/meta/distribution/dstr2> a dcatapit:Distribution , dcat:Distribution ;
+	dct:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+	dcat:accessURL <https://github.com/ministero-salute/it-dgc-opendata/blob/master/data/dgc-issued.csv> ;
+	dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+	dct:description "Daily issued DGCs"@en ;
+	dct:description "DGC emessi giornalmente"@it ;
+	dct:title "Distribuzione JSON del dataset DGC emessi giornalmente"@it ;
+	dct:title "JSON distribution of daily issued DGCs dataset"@en ;
+	dcat:downloadURL <https://raw.githubusercontent.com/ministero-salute/it-dgc-opendata/master/data/dgc-issued.json> ;
+	dct:modified "2021-10-20"^^xsd:date .
+
+<http://sample.org/meta/distribution/dstr3> a dcatapit:Distribution , dcat:Distribution ;
+	dct:format <http://publications.europa.eu/resource/authority/file-type/CSV> ;
+	dcat:accessURL <https://github.com/ministero-salute/it-dgc-opendata/blob/master/data/dgc-issued-latest.csv> ;
+	dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+	dct:description "CSV distribution of latest issued DGCs data"@en ;
+	dct:description "Distribuzione CSV dei dati più recenti sui DGC emessi"@it ;
+	dct:title "Latest issued DGCs"@en ;
+	dct:title "Dati più recenti sui DGC emessi"@it ;
+	dcat:downloadURL <https://raw.githubusercontent.com/ministero-salute/it-dgc-opendata/master/data/dgc-issued-latest.csv> ;
+	dct:modified "2021-10-20"^^xsd:date .
+
+<http://sample.org/meta/distribution/dstr4> a dcatapit:Distribution , dcat:Distribution ;
+	dct:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+	dcat:accessURL <https://github.com/ministero-salute/it-dgc-opendata/blob/master/data/dgc-issued-latest.json> ;
+	dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+	dct:description "JSON distribution of latest data on issued DGCs"@en ;
+	dct:description "Distribuzione JSON dei dati più recenti sui DGC emessi"@it ;
+	dct:title "Latest issued DGCs"@en ;
+	dct:title "Dati più recenti sui DGC emessi"@it ;
+	dcat:downloadURL <https://raw.githubusercontent.com/ministero-salute/it-dgc-opendata/master/data/dgc-issued-latest.csv> ;
+	dct:modified "2021-10-20"^^xsd:date .
+
+<http://sample.org/meta/distribution/dstr5> a dcatapit:Distribution , dcat:Distribution ;
+	dct:format <http://publications.europa.eu/resource/authority/file-type/CSV> ;
+	dcat:accessURL <https://github.com/ministero-salute/it-dgc-opendata/blob/master/data/dgc-acquired.csv> ;
+	dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+	dct:description "CSV distribution of daily acquired DGCs"@en ;
+	dct:description "Distribuzione CSV dei DGC acquisiti giornalmente"@it ;
+	dct:title "Acquired DGCs"@en ;
+	dct:title "DGC acquisiti"@it ;
+	dcat:downloadURL <https://raw.githubusercontent.com/ministero-salute/it-dgc-opendata/master/data/dgc-acquired.csv> ;
+	dct:modified "2021-10-20"^^xsd:date .
+
+<http://sample.org/meta/distribution/dstr6> a dcatapit:Distribution , dcat:Distribution ;
+	dct:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+	dcat:accessURL <https://github.com/ministero-salute/it-dgc-opendata/blob/master/data/dgc-acquired.csv> ;
+	dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+	dct:description "JSON distribution of daily acquired DGCs"@en ;
+	dct:description "Distribuzione JSON dei DGC acquisiti giornalmente"@it ;
+	dct:title "Acquired DGCs"@en ;
+	dct:title "DGC acquisiti"@it ;
+	dcat:downloadURL <https://raw.githubusercontent.com/ministero-salute/it-dgc-opendata/master/data/dgc-acquired.json> ;
+	dct:modified "2021-10-20"^^xsd:date .
+
+
+<http://sample.org/meta/distribution/dstr7> a dcatapit:Distribution , dcat:Distribution ;
+	dct:format <http://publications.europa.eu/resource/authority/file-type/CSV> ;
+	dcat:accessURL <https://github.com/ministero-salute/it-dgc-opendata/blob/master/data/dgc-acquired-latest.csv> ;
+	dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+	dct:description "CSV distribution of latest data on acquired DGCs"@en ;
+	dct:description "Distribuzione CSV dei dati più recenti sui DGC acquisiti"@it ;
+	dct:title "Latest data for acquired DGCs"@en ;
+	dct:title "Dati più recenti sui DGC acquisiti"@it ;
+	dcat:downloadURL <https://raw.githubusercontent.com/ministero-salute/it-dgc-opendata/master/data/dgc-acquired-latest.csv> ;
+	dct:modified "2021-10-20"^^xsd:date .
+
+<http://sample.org/meta/distribution/dstr8> a dcatapit:Distribution , dcat:Distribution ;
+	dct:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+	dcat:accessURL <https://github.com/ministero-salute/it-dgc-opendata/blob/master/data/dgc-acquired-latest.csv> ;
+	dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+	dct:description "JSON distribution of latest data on acquired DGCs"@en ;
+	dct:description "Distribuzione JSON dei dati più recenti sui DGC acquisiti"@it ;
+	dct:title "Latest data for acquired DGCs"@en ;
+	dct:title "Dati più recenti sui DGC acquisiti"@it ;
+	dcat:downloadURL <https://raw.githubusercontent.com/ministero-salute/it-dgc-opendata/master/data/dgc-acquired-latest.json> ;
+	dct:modified "2021-10-20"^^xsd:date .
+
+<http://sample.org/meta/contact/M_SA> a dcatapit:Organization , vcard:Organization , vcard:Kind ;
+	vcard:fn "open data" ;
+	vcard:hasEmail <mailto:info@salute.gov.it> .
+
+<http://sample.org/meta/contact/M_SA> vcard:hasUrl <https://www.salute.gov.it/portale/p5_0.jsp?lingua=italiano&id=58> .
