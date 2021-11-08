@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:foaf="http://xmlns.com/foaf/0.1/"
+         xmlns:dc="http://purl.org/dc/terms/"
+         xmlns:dcat="http://www.w3.org/ns/dcat#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:ns0="http://www.w3.org/ns/locn#"
+         xmlns:vcard="http://www.w3.org/2006/vcard/ns#">
+
+  <rdf:Description rdf:about="http://sample.org/meta/agent/m_sa">
+    <rdf:type rdf:resource="http://dati.gov.it/onto/dcatapit#Agent"/>
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+    <foaf:name>Ministero della Salute</foaf:name>
+    <dc:identifier>m_sa</dc:identifier>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://sample.org/meta/catalog/cat1">
+
+    <rdf:type rdf:resource="http://dati.gov.it/onto/dcatapit#Catalog"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Catalog"/>
+    <dc:title xml:lang="en">EU Digital Covid Certificate - Open Data</dc:title>
+    <dc:title xml:lang="it">Certificato Digitale Covid Europeo - Open Data</dc:title>
+    <dc:description xml:lang="en">This repository contains the data collected by the Italian &quot;EU Digital Covid Certificate&quot; system.</dc:description>
+    <dc:description xml:lang="it">Questo è il catalogo che contiene tutti i dati raccolti dal sistema italiano sul Certificato Covid Europeo</dc:description>
+    <dc:publisher rdf:resource="http://sample.org/meta/agent/m_sa"/>
+    <dcat:dataset>
+      <rdf:Description rdf:about="https://github.com/ministero-salute/it-dgc-opendata/blob/master/format-dgc-issued-trend.md">
+        <rdf:type rdf:resource="http://dati.gov.it/onto/dcatapit#Dataset"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+        <dc:identifier>m_sa:dgc-issued</dc:identifier>
+        <dc:title xml:lang="it">DGC emessi</dc:title>
+        <dc:title xml:lang="en">Issued DGCs</dc:title>
+        <dc:description xml:lang="en">Issued DGCs by issuing method</dc:description>
+        <dc:description xml:lang="it">DGC emessi divisi per metodo di emissione</dc:description>
+        <dc:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-10-20</dc:modified>
+        <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/HEAL"/>
+        <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/GOVE"/>
+        <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/SOCI"/>
+        <dc:rightsHolder rdf:resource="http://sample.org/meta/agent/m_sa"/>
+        <dc:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/DAILY"/>
+        <dcat:landingPage rdf:resource="https://github.com/ministero-salute/it-dgc-opendata"/>
+        <dcat:distribution>
+          <rdf:Description rdf:about="https://github.com/ministero-salute/it-dgc-opendata/blob/master/data/dgc-issued.csv">
+            <rdf:type rdf:resource="http://dati.gov.it/onto/dcatapit#Distribution"/>
+            <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+            <dc:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/CSV"/>
+            <dcat:accessURL rdf:resource="https://github.com/ministero-salute/it-dgc-opendata/blob/master/data/dgc-issued.csv"/>
+            <dc:license rdf:resource="https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40"/>
+            <dc:description xml:lang="en">Daily issued DGCs</dc:description>
+            <dc:description xml:lang="it">DGC emessi giornalmente</dc:description>
+            <dc:title xml:lang="it">Distribuzione CSV del dataset DGC emessi giornalmente</dc:title>
+            <dc:title xml:lang="en">CSV distribution of daily issued DGCs dataset</dc:title>
+            <dcat:downloadURL rdf:resource="https://raw.githubusercontent.com/ministero-salute/it-dgc-opendata/master/data/dgc-issued.csv"/>
+            <dc:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-10-20</dc:modified>
+          </rdf:Description>
+        </dcat:distribution>
+
+        <dcat:distribution>
+          <rdf:Description rdf:about="https://github.com/ministero-salute/it-dgc-opendata/blob/master/data/dgc-issued.json">
+            <rdf:type rdf:resource="http://dati.gov.it/onto/dcatapit#Distribution"/>
+            <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+            <dc:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/JSON"/>
+            <dcat:accessURL rdf:resource="https://github.com/ministero-salute/it-dgc-opendata/blob/master/data/dgc-issued.json"/>
+            <dc:license rdf:resource="https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40"/>
+            <dc:description xml:lang="en">Daily issued DGCs</dc:description>
+            <dc:description xml:lang="it">DGC emessi giornalmente</dc:description>
+            <dc:title xml:lang="it">Distribuzione JSON del dataset DGC emessi giornalmente</dc:title>
+            <dc:title xml:lang="en">JSON distribution of daily issued DGCs dataset</dc:title>
+            <dcat:downloadURL rdf:resource="https://raw.githubusercontent.com/ministero-salute/it-dgc-opendata/master/data/dgc-issued.json"/>
+            <dc:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-10-20</dc:modified>
+          </rdf:Description>
+        </dcat:distribution>
+
+        <dcat:distribution>
+          <rdf:Description rdf:about="https://github.com/ministero-salute/it-dgc-opendata/blob/master/data/dgc-issued-latest.csv">
+            <rdf:type rdf:resource="http://dati.gov.it/onto/dcatapit#Distribution"/>
+            <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+            <dc:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/CSV"/>
+            <dcat:accessURL rdf:resource="https://github.com/ministero-salute/it-dgc-opendata/blob/master/data/dgc-issued-latest.csv"/>
+            <dc:license rdf:resource="https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40"/>
+            <dc:description xml:lang="en">CSV distribution of latest issued DGCs data</dc:description>
+            <dc:description xml:lang="it">Distribuzione CSV dei dati più recenti sui DGC emessi</dc:description>
+            <dc:title xml:lang="en">Latest issued DGCs</dc:title>
+            <dc:title xml:lang="it">Dati più recenti sui DGC emessi</dc:title>
+            <dcat:downloadURL rdf:resource="https://raw.githubusercontent.com/ministero-salute/it-dgc-opendata/master/data/dgc-issued-latest.csv"/>
+            <dc:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-10-20</dc:modified>
+          </rdf:Description>
+        </dcat:distribution>
+
+        <dcat:distribution>
+          <rdf:Description rdf:about="https://github.com/ministero-salute/it-dgc-opendata/blob/master/data/dgc-issued-latest.json">
+            <rdf:type rdf:resource="http://dati.gov.it/onto/dcatapit#Distribution"/>
+            <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+            <dc:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/JSON"/>
+            <dcat:accessURL rdf:resource="https://github.com/ministero-salute/it-dgc-opendata/blob/master/data/dgc-issued-latest.json"/>
+            <dc:license rdf:resource="https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40"/>
+            <dc:description xml:lang="en">JSON distribution of latest data on issued DGCs</dc:description>
+            <dc:description xml:lang="it">Distribuzione JSON dei dati più recenti sui DGC emessi</dc:description>
+            <dc:title xml:lang="en">Latest issued DGCs</dc:title>
+            <dc:title xml:lang="it">Dati più recenti sui DGC emessi</dc:title>
+            <dcat:downloadURL rdf:resource="https://github.com/ministero-salute/it-dgc-opendata/blob/master/data/dgc-issued-latest.json"/>
+            <dc:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-10-20</dc:modified>
+          </rdf:Description>
+        </dcat:distribution>
+
+        <dcat:contactPoint rdf:resource="http://sample.org/meta/contact/M_SA"/>
+        <dc:publisher rdf:resource="http://sample.org/meta/agent/m_sa"/>
+        <dc:creator rdf:resource="http://sample.org/meta/agent/m_sa"/>
+        <owl:versionInfo>1.0</owl:versionInfo>
+        <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-10-20</dc:issued>
+
+        <dc:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA"/>
+        <dc:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG"/>
+        <dcat:keyword>Certificato</dcat:keyword>
+        <dcat:keyword>Greenpass</dcat:keyword>
+        <dc:location>
+          <rdf:Description>
+            <rdf:type rdf:resource="http://www.w3.org/ns/locn#Geometry"/>
+            <ns0:geometry rdf:datatype="http://www.opengis.net/ont/geosparql#gmlLiteral">&lt;gml:Envelope srsName=&quot;http://www.opengis.net/def/EPSG/0/4326&quot;&gt;&lt;gml:lowerCorner&gt;6.7499552751  36.619987291&lt;/gml:lowerCorner&gt;&lt;gml:upperCorner&gt; 18.4802470232  47.1153931748&lt;/gml:upperCorner&gt;&lt;/gml:Envelope&gt;</ns0:geometry>
+          </rdf:Description>
+        </dc:location>
+
+      </rdf:Description>
+    </dcat:dataset>
+
+    <dcat:dataset>
+      <rdf:Description rdf:about="https://github.com/ministero-salute/it-dgc-opendata/blob/master/format-dgc-acquired-trend.md">
+        <rdf:type rdf:resource="http://dati.gov.it/onto/dcatapit#Dataset"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+        <dc:identifier>m_sa:dgc-acquired</dc:identifier>
+        <dc:title xml:lang="it">DGC acquisiti</dc:title>
+        <dc:title xml:lang="en">Acquired DGCs</dc:title>
+        <dc:description xml:lang="it">DGC acquisiti divisi per metodo di acquisizione</dc:description>
+        <dc:description xml:lang="en">Acquired DGCs by method of acquisition</dc:description>
+        <dc:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-10-20</dc:modified>
+        <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/HEAL"/>
+        <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/GOVE"/>
+        <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/SOCI"/>
+        <dc:rightsHolder rdf:resource="http://sample.org/meta/agent/m_sa"/>
+        <dc:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/DAILY"/>
+        <dcat:landingPage rdf:resource="https://github.com/ministero-salute/it-dgc-opendata"/>
+        <dcat:distribution>
+          <rdf:Description rdf:about="https://github.com/ministero-salute/it-dgc-opendata/blob/master/data/dgc-acquired.csv">
+            <rdf:type rdf:resource="http://dati.gov.it/onto/dcatapit#Distribution"/>
+            <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+            <dc:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/CSV"/>
+            <dcat:accessURL rdf:resource="https://github.com/ministero-salute/it-dgc-opendata/blob/master/data/dgc-acquired.csv"/>
+            <dc:license rdf:resource="https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40"/>
+            <dc:description xml:lang="en">CSV distribution of daily acquired DGCs</dc:description>
+            <dc:description xml:lang="it">Distribuzione CSV dei DGC acquisiti giornalmente</dc:description>
+            <dc:title xml:lang="en">Acquired DGCs</dc:title>
+            <dc:title xml:lang="it">DGC acquisiti</dc:title>
+            <dcat:downloadURL rdf:resource="https://raw.githubusercontent.com/ministero-salute/it-dgc-opendata/master/data/dgc-acquired.csv"/>
+            <dc:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-10-20</dc:modified>
+          </rdf:Description>
+        </dcat:distribution>
+
+        <dcat:distribution>
+          <rdf:Description rdf:about="https://github.com/ministero-salute/it-dgc-opendata/blob/master/data/dgc-acquired.json">
+            <rdf:type rdf:resource="http://dati.gov.it/onto/dcatapit#Distribution"/>
+            <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+            <dc:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/JSON"/>
+            <dcat:accessURL rdf:resource="https://github.com/ministero-salute/it-dgc-opendata/blob/master/data/dgc-acquired.json"/>
+            <dc:license rdf:resource="https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40"/>
+            <dc:description xml:lang="en">JSON distribution of daily acquired DGCs</dc:description>
+            <dc:description xml:lang="it">Distribuzione JSON dei DGC acquisiti giornalmente</dc:description>
+            <dc:title xml:lang="en">Acquired DGCs</dc:title>
+            <dc:title xml:lang="it">DGC acquisiti</dc:title>
+            <dcat:downloadURL rdf:resource="https://raw.githubusercontent.com/ministero-salute/it-dgc-opendata/master/data/dgc-acquired.json"/>
+            <dc:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-10-20</dc:modified>
+          </rdf:Description>
+        </dcat:distribution>
+
+        <dcat:distribution>
+          <rdf:Description rdf:about="https://github.com/ministero-salute/it-dgc-opendata/blob/master/data/dgc-acquired-latest.csv">
+            <rdf:type rdf:resource="http://dati.gov.it/onto/dcatapit#Distribution"/>
+            <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+            <dc:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/CSV"/>
+            <dcat:accessURL rdf:resource="https://github.com/ministero-salute/it-dgc-opendata/blob/master/data/dgc-acquired-latest.csv"/>
+            <dc:license rdf:resource="https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40"/>
+            <dc:description xml:lang="en">CSV distribution of latest data on acquired DGCs</dc:description>
+            <dc:description xml:lang="it">Distribuzione CSV dei dati più recenti sui DGC acquisiti</dc:description>
+            <dc:title xml:lang="en">Latest data for acquired DGCs</dc:title>
+            <dc:title xml:lang="it">Dati più recenti sui DGC acquisiti</dc:title>
+            <dcat:downloadURL rdf:resource="https://raw.githubusercontent.com/ministero-salute/it-dgc-opendata/master/data/dgc-acquired-latest.csv"/>
+            <dc:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-10-20</dc:modified>
+          </rdf:Description>
+        </dcat:distribution>
+
+        <dcat:distribution>
+          <rdf:Description rdf:about="https://github.com/ministero-salute/it-dgc-opendata/blob/master/data/dgc-acquired-latest.json">
+            <rdf:type rdf:resource="http://dati.gov.it/onto/dcatapit#Distribution"/>
+            <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+            <dc:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/JSON"/>
+            <dcat:accessURL rdf:resource="https://github.com/ministero-salute/it-dgc-opendata/blob/master/data/dgc-acquired-latest.json"/>
+            <dc:license rdf:resource="https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40"/>
+            <dc:description xml:lang="en">JSON distribution of latest data on acquired DGCs</dc:description>
+            <dc:description xml:lang="it">Distribuzione JSON dei dati più recenti sui DGC acquisiti</dc:description>
+            <dc:title xml:lang="en">Latest data for acquired DGCs</dc:title>
+            <dc:title xml:lang="it">Dati più recenti sui DGC acquisiti</dc:title>
+            <dcat:downloadURL rdf:resource="https://raw.githubusercontent.com/ministero-salute/it-dgc-opendata/master/data/dgc-acquired-latest.json"/>
+            <dc:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-10-20</dc:modified>
+          </rdf:Description>
+
+        </dcat:distribution>
+        <dcat:contactPoint rdf:resource="http://sample.org/meta/contact/M_SA"/>
+        <dc:publisher rdf:resource="http://sample.org/meta/agent/m_sa"/>
+        <dc:creator rdf:resource="http://sample.org/meta/agent/m_sa"/>
+        <owl:versionInfo>1.0</owl:versionInfo>
+        <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-10-20</dc:issued>
+        <dc:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA"/>
+        <dc:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG"/>
+        <dcat:keyword>Certificato</dcat:keyword>
+        <dcat:keyword>Greenpass</dcat:keyword>
+        <dc:location>
+          <ns0:Geometry>
+            <ns0:geometry rdf:datatype="http://www.opengis.net/ont/geosparql#gmlLiteral">&lt;gml:Envelope srsName=&quot;http://www.opengis.net/def/EPSG/0/4326&quot;&gt;&lt;gml:lowerCorner&gt;6.7499552751  36.619987291&lt;/gml:lowerCorner&gt;&lt;gml:upperCorner&gt; 18.4802470232  47.1153931748&lt;/gml:upperCorner&gt;&lt;/gml:Envelope&gt;</ns0:geometry>
+          </ns0:Geometry>
+        </dc:location>
+
+      </rdf:Description>
+
+    </dcat:dataset>
+
+    <dcat:themeTaxonomy rdf:resource="http://publications.europa.eu/resource/authority/data-theme"/>
+    <dc:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-10-21</dc:modified>
+    <foaf:homepage rdf:resource="https://github.com/ministero-salute/it-dgc-opendata/"/>
+    <dc:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA"/>
+    <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-10-21</dc:issued>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://sample.org/meta/contact/M_SA">
+    <rdf:type rdf:resource="http://dati.gov.it/onto/dcatapit#Organization"/>
+    <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Organization"/>
+    <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Kind"/>
+    <vcard:fn>open data</vcard:fn>
+    <vcard:hasEmail rdf:resource="mailto:info@salute.gov.it"/>
+    <vcard:hasUrl rdf:resource="https://www.salute.gov.it/portale/p5_0.jsp?lingua=italiano&amp;id=58"/>
+  </rdf:Description>
+</rdf:RDF>
