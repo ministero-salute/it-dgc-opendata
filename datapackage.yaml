@@ -23,82 +23,82 @@ resources:
           type: date
         - name: acquired_by_app_immuni
           type: integer
-          title: daily number of DGC acquired through the \"Immuni\" app
+          description: daily number of DGC acquired through the \"Immuni\" app
           constraints:
             minimum: 0
         - name: acquired_by_app_immuni_total
           type: integer
-          title: total number of DGC acquired through the \"Immuni\" app
+          description: total number of DGC acquired through the \"Immuni\" app
           constraints:
             minimum: 0
         - name: acquired_by_web_ts
           type: integer
-          title: daily number of DGC acquired through the portal dgc.gov.it using the \"Tessera Sanitaria\"
+          description: daily number of DGC acquired through the portal dgc.gov.it using the \"Tessera Sanitaria\"
           constraints:
             minimum: 0
         - name: acquired_by_web_ts_total
           type: integer
-          title: total number of DGC acquired through the portal dgc.gov.it using the \"Tessera Sanitaria\"
+          description: total number of DGC acquired through the portal dgc.gov.it using the \"Tessera Sanitaria\"
           constraints:
             minimum: 0
         - name: acquired_by_web_id
           type: integer
-          title: daily number of DGC acquired through the portal dgc.gov.it using the identification document
+          description: daily number of DGC acquired through the portal dgc.gov.it using the identification document
           constraints:
             minimum: 0
         - name: acquired_by_web_id_total
           type: integer
-          title: total number of DGC acquired through the portal dgc.gov.it using the identification document
+          description: total number of DGC acquired through the portal dgc.gov.it using the identification document
           constraints:
             minimum: 0
         - name: acquired_by_web_spid
           type: integer
-          title: daily number of DGC acquired through the portal dgc.gov.it using SPID
+          description: daily number of DGC acquired through the portal dgc.gov.it using SPID
           constraints:
             minimum: 0
         - name: acquired_by_web_spid_total
           type: integer
-          title: total number of DGC acquired through the portal dgc.gov.it using SPID
+          description: total number of DGC acquired through the portal dgc.gov.it using SPID
           constraints:
             minimum: 0
         - name: acquired_by_operator_ts
           type: integer
-          title: daily number of DGC acquired through the operator using the \"Tessera Sanitaria\"
+          description: daily number of DGC acquired through the operator using the \"Tessera Sanitaria\"
           constraints:
             minimum: 0
         - name: acquired_by_operator_ts_total
           type: integer
-          title: total number of DGC acquired through the operator using the \"Tessera Sanitaria\"
+          description: total number of DGC acquired through the operator using the \"Tessera Sanitaria\"
           constraints:
             minimum: 0
         - name: acquired_by_operator_id
           type: integer
-          title: daily number of DGC acquired through the operator using the identification document
+          description: daily number of DGC acquired through the operator using the identification document
           constraints:
             minimum: 0
         - name: acquired_by_operator_id_total
           type: integer
-          title: total number of DGC acquired through the operator using the identification document
+          description: total number of DGC acquired through the operator using the identification document
           constraints:
             minimum: 0
         - name: acquired_by_app_io
           type: integer
-          title: daily number of DGC acquired through the \"IO\" app
+          description: daily number of DGC acquired through the \"IO\" app
           constraints:
             minimum: 0
         - name: acquired_by_app_io_total
           type: integer
-          title: total number of DGC acquired through the \"IO\" app
+          description: total number of DGC acquired through the \"IO\" app
           constraints:
             minimum: 0
         - name: acquired_all
           type: integer
-          title: daily number of DGC acquired overall
+          description: daily number of DGC acquired overall
           constraints:
             minimum: 0
         - name: acquired_all_total
           type: integer
-          title: total number of DGC acquired overall
+          description: total number of DGC acquired overall
           constraints:
             minimum: 0
       primaryKey: data
@@ -115,80 +115,80 @@ resources:
           type: date
         - name: acquired_by_app_immuni
           type: integer
-          title: daily number of DGC acquired through the \"Immuni\" app
+          description: daily number of DGC acquired through the \"Immuni\" app
         - name: acquired_by_app_immuni_total
           type: integer
-          title: total number of DGC acquired through the \"Immuni\" app
+          description: total number of DGC acquired through the \"Immuni\" app
           constraints:
             minimum: 0
         - name: acquired_by_web_ts
           type: integer
-          title: daily number of DGC acquired through the portal dgc.gov.it using the \"Tessera Sanitaria\"
+          description: daily number of DGC acquired through the portal dgc.gov.it using the \"Tessera Sanitaria\"
           constraints:
             minimum: 0
         - name: acquired_by_web_ts_total
           type: integer
-          title: total number of DGC acquired through the portal dgc.gov.it using the \"Tessera Sanitaria\"
+          description: total number of DGC acquired through the portal dgc.gov.it using the \"Tessera Sanitaria\"
           constraints:
             minimum: 0
         - name: acquired_by_web_id
           type: integer
-          title: daily number of DGC acquired through the portal dgc.gov.it using the identification document
+          description: daily number of DGC acquired through the portal dgc.gov.it using the identification document
           constraints:
             minimum: 0
         - name: acquired_by_web_id_total
           type: integer
-          title: total number of DGC acquired through the portal dgc.gov.it using the identification document
+          description: total number of DGC acquired through the portal dgc.gov.it using the identification document
           constraints:
             minimum: 0
         - name: acquired_by_web_spid
           type: integer
-          title: daily number of DGC acquired through the portal dgc.gov.it using SPID
+          description: daily number of DGC acquired through the portal dgc.gov.it using SPID
           constraints:
             minimum: 0
         - name: acquired_by_web_spid_total
           type: integer
-          title: total number of DGC acquired through the portal dgc.gov.it using SPID
+          description: total number of DGC acquired through the portal dgc.gov.it using SPID
           constraints:
             minimum: 0
         - name: acquired_by_operator_ts
           type: integer
-          title: daily number of DGC acquired through the operator using the \"Tessera Sanitaria\"
+          description: daily number of DGC acquired through the operator using the \"Tessera Sanitaria\"
           constraints:
             minimum: 0
         - name: acquired_by_operator_ts_total
           type: integer
-          title: total number of DGC acquired through the operator using the \"Tessera Sanitaria\"
+          description: total number of DGC acquired through the operator using the \"Tessera Sanitaria\"
           constraints:
             minimum: 0
         - name: acquired_by_operator_id
           type: integer
-          title: daily number of DGC acquired through the operator using the identification document
+          description: daily number of DGC acquired through the operator using the identification document
           constraints:
             minimum: 0
         - name: acquired_by_operator_id_total
           type: integer
-          title: total number of DGC acquired through the operator using the identification document
+          description: total number of DGC acquired through the operator using the identification document
           constraints:
             minimum: 0
         - name: acquired_by_app_io
           type: integer
-          title: daily number of DGC acquired through the \"IO\" app
+          description: daily number of DGC acquired through the \"IO\" app
           constraints:
             minimum: 0
         - name: acquired_by_app_io_total
           type: integer
-          title: total number of DGC acquired through the \"IO\" app
+          description: total number of DGC acquired through the \"IO\" app
           constraints:
             minimum: 0
         - name: acquired_all
           type: integer
-          title: daily number of DGC acquired overall
+          description: daily number of DGC acquired overall
           constraints:
             minimum: 0
         - name: acquired_all_total
           type: integer
-          title: total number of DGC acquired overall
+          description: total number of DGC acquired overall
           constraints:
             minimum: 0
       primaryKey: data
@@ -205,42 +205,42 @@ resources:
           type: date
         - name: issued_for_vaccines
           type: integer
-          title: number of daily DGC issued by vaccination
+          description: number of daily DGC issued by vaccination
           constraints:
             minimum: 0
         - name: issued_for_vaccines_total
           type: integer
-          title: number of total DGC issued by vaccination
+          description: number of total DGC issued by vaccination
           constraints:
             minimum: 0
         - name: issued_for_tests
           type: integer
-          title: number of daily DGC issued per covid-19 test
+          description: number of daily DGC issued per covid-19 test
           constraints:
             minimum: 0
         - name: issued_for_tests_total
           type: integer
-          title: number of total DGC issued per covid-19 test
+          description: number of total DGC issued per covid-19 test
           constraints:
             minimum: 0
         - name: issued_for_healing
           type: integer
-          title: number of daily DGC issued by covid-19 healing
+          description: number of daily DGC issued by covid-19 healing
           constraints:
             minimum: 0
         - name: issued_for_healing_total
           type: integer
-          title: number of total DGC issued by covid-19 healing
+          description: number of total DGC issued by covid-19 healing
           constraints:
             minimum: 0
         - name: issued_all
           type: integer
-          title: total number of daily DGC issued
+          description: total number of daily DGC issued
           constraints:
             minimum: 0
         - name: issued_all_total
           type: integer
-          title: total number of DGC issued
+          description: total number of DGC issued
           constraints:
             minimum: 0
       primaryKey: data
@@ -257,42 +257,42 @@ resources:
           type: date
         - name: issued_for_vaccines
           type: integer
-          title: number of daily DGC issued by vaccination
+          description: number of daily DGC issued by vaccination
           constraints:
             minimum: 0
         - name: issued_for_vaccines_total
           type: integer
-          title: number of total DGC issued by vaccination
+          description: number of total DGC issued by vaccination
           constraints:
             minimum: 0
         - name: issued_for_tests
           type: integer
-          title: number of daily DGC issued per covid-19 test
+          description: number of daily DGC issued per covid-19 test
           constraints:
             minimum: 0
         - name: issued_for_tests_total
           type: integer
-          title: number of total DGC issued per covid-19 test
+          description: number of total DGC issued per covid-19 test
           constraints:
             minimum: 0
         - name: issued_for_healing
           type: integer
-          title: number of daily DGC issued by covid-19 healing
+          description: number of daily DGC issued by covid-19 healing
           constraints:
             minimum: 0
         - name: issued_for_healing_total
           type: integer
-          title: number of total DGC issued by covid-19 healing
+          description: number of total DGC issued by covid-19 healing
           constraints:
             minimum: 0
         - name: issued_all
           type: integer
-          title: total number of daily DGC issued
+          description: total number of daily DGC issued
           constraints:
             minimum: 0
         - name: issued_all_total
           type: integer
-          title: total number of DGC issued
+          description: total number of DGC issued
           constraints:
             minimum: 0
       primaryKey: data
