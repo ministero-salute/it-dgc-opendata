@@ -98,7 +98,7 @@
             <dc:description xml:lang="it">Distribuzione JSON dei dati più recenti sui DGC emessi</dc:description>
             <dc:title xml:lang="en">Latest issued DGCs</dc:title>
             <dc:title xml:lang="it">Dati più recenti sui DGC emessi</dc:title>
-            <dcat:downloadURL rdf:resource="https://github.com/ministero-salute/it-dgc-opendata/blob/master/data/dgc-issued-latest.json"/>
+            <dcat:downloadURL rdf:resource="https://raw.githubusercontent.com/ministero-salute/it-dgc-opendata/master/data/dgc-issued-latest.json"/>
             <dc:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-10-20</dc:modified>
           </rdf:Description>
         </dcat:distribution>
