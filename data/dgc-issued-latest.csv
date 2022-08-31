@@ -1,2 +1,2 @@
-data,issued_for_vaccines,issued_for_vaccines_total,issued_for_tests,issued_for_tests_total,issued_for_healing,issued_for_healing_total,issued_all,issued_all_total
-2022-08-30,19169,131395268,118721,157842112,33051,21610947,170941,310848327
+data,issued_for_vaccines,issued_for_vaccines_total,issued_for_tests,issued_for_tests_total,issued_for_healing,issued_for_healing_total,issued_for_exemption,issued_for_exemption_total,issued_all,issued_all_total
+2022-08-30,19169,131395268,118721,157842112,33051,21610947,310,166348,171251,311014675
