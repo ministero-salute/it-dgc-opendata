@@ -1,4 +1,5 @@
 data,acquired_by_app_immuni,acquired_by_app_immuni_total,acquired_by_web_ts,acquired_by_web_ts_total,acquired_by_web_id,acquired_by_web_id_total,acquired_by_web_spid,acquired_by_web_spid_total,acquired_by_operator_ts,acquired_by_operator_ts_total,acquired_by_operator_id,acquired_by_operator_id_total,acquired_by_app_io,acquired_by_app_io_total,acquired_all,acquired_all_total
+2024-03-08,0,26235422,0,100339802,0,1051670,8,79696908,11,20007580,0,7958711,502,251470334,521,486760427
 2024-03-07,0,26235422,1,100339802,0,1051670,20,79696900,19,20007569,0,7958711,560,251469832,600,486759906
 2024-03-06,0,26235422,4,100339801,0,1051670,12,79696880,37,20007550,0,7958711,592,251469272,645,486759306
 2024-03-05,0,26235422,5,100339797,0,1051670,34,79696868,29,20007513,1,7958711,616,251468680,685,486758661
